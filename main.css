@@ -1,0 +1,53 @@
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	background-color: lightGray;
+}
+
+.download-icon i
+{
+	font-size: 8vw;
+}
+
+.download-icon
+{
+}
+
+.download-osname
+{
+	font-size: 1.5vw;
+}
+
+.download-item
+{
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+	width: 50%
+}
+
+.download-item:hover
+{
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+
+.download-osdesc
+{
+	color: gray
+}
+
+.download-item:hover
+{
+	background-color: lightGray;
+}
+
+.github-fork-ribbon.right-top:before
+{
+	background-color: #090;
+}
