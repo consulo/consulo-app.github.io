@@ -22,6 +22,12 @@ body
 	font-size: 1.1rem;
 }
 
+.download-osdesc
+{
+	font-size: 0.8rem;
+}
+
+
 .download-item
 {
 	cursor: pointer;
