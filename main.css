@@ -22,12 +22,6 @@ body
 	font-size: 1.1rem;
 }
 
-.download-osdesc
-{
-	font-size: 0.8rem;
-}
-
-
 .download-item
 {
 	cursor: pointer;
@@ -45,7 +39,8 @@ body
 
 .download-osdesc
 {
-	color: gray
+	color: gray;
+	font-size: 0.8rem;
 }
 
 .download-item:hover
