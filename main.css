@@ -19,7 +19,7 @@ body
 
 .download-osname
 {
-	font-size: 1.5vw;
+	font-size: 1.1rem;
 }
 
 .download-item
@@ -39,7 +39,8 @@ body
 
 .download-osdesc
 {
-	color: gray
+	color: gray;
+	font-size: 0.8rem;
 }
 
 .download-item:hover
