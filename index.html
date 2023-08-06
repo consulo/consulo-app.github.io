@@ -14,8 +14,6 @@
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css"/>
 
-		<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-
 		<link href="main.css" rel="stylesheet">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174153585-1"></script>
@@ -35,16 +33,19 @@
 				<div class="container-fluid">
 					<ul class="nav nav-tabs mb-3 justify-content-center" id="pills-tab" role="tablist">
 						<li class="nav-item" role="presentation">
-							<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">With JRE x64</a>
+							<a class="nav-link active" id="pills-x64-tab" data-toggle="pill" href="#pills-x64" role="tab" aria-controls="pills-home" aria-selected="true">With JRE x64</a>
 						</li>
 						<li class="nav-item" role="presentation">
-							<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Without JRE</a>
+							<a class="nav-link" id="pills-arm64-tab" data-toggle="pill" href="#pills-arm64" role="tab" aria-controls="pills-home" aria-selected="true">With JRE ARM64</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" id="pills-nojre-tab" data-toggle="pill" href="#pills-nojre" role="tab" aria-controls="pills-contact" aria-selected="false">Without JRE</a>
 						</li>
 					</ul>
 					<div class="tab-content pt-4" id="pills-tabContent">
-						<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+						<div class="tab-pane fade show active" id="pills-x64" role="tabpanel" aria-labelledby="pills-x64-tab">
 							<div class="d-flex flex-row">
-								<a class="download-item flex-fill bd-highlight text-center pt-5 pb-5" href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo-win64&zip=true">
+								<a class="download-item flex-fill bd-highlight text-center pt-5 pb-5" href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.windows64.installer">
 									<div class="download-icon" style="color: #0078D7;">
 										<i class="fab fa-windows"></i>
 									</div>
@@ -55,7 +56,7 @@
 										<span>(Windows 7 or higher)</span>
 									</div>
 								</a>
-								<a class="download-item flex-fill bd-highlight text-center  pt-5 pb-5" href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo-mac64">
+								<a class="download-item flex-fill bd-highlight text-center  pt-5 pb-5" href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.mac64">
 									<div class="download-icon" style="color: #c0c0c0;">
 										<i class="fab fa-apple"></i>
 									</div>
@@ -66,7 +67,7 @@
 										<span>(macOS 10.12 or higher)</span>
 									</div>
 								</a>
-								<a class="download-item flex-fill bd-highlight text-center  pt-5 pb-5" href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo-linux64">
+								<a class="download-item flex-fill bd-highlight text-center  pt-5 pb-5" href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.linux64">
 									<div class="download-icon">
 										<i class="fab fa-linux"></i>
 									</div>
@@ -76,9 +77,49 @@
 								</a>
 							</div>
 						</div>
-						<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+						<div class="tab-pane fade" id="pills-arm64" role="tabpanel" aria-labelledby="pills-arm64-tab">
 							<div class="d-flex flex-row">
-								<a class="download-item flex-fill bd-highlight text-center pt-5 pb-5" href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo-win-no-jre&zip=true">
+								<a class="download-item flex-fill bd-highlight text-center pt-5 pb-5" href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.windowsA64.zip">
+									<div class="download-icon" style="color: #0078D7;">
+										<i class="fab fa-windows"></i>
+									</div>
+									<div class="download-osname mt-3">
+										<span>Windows</span>
+									</div>
+									<div class="download-osdesc mt-3">
+										<span>(Windows 10 or higher)</span>
+									</div>
+								</a>
+								<!--
+								TODO arm support
+								<a class="download-item flex-fill bd-highlight text-center  pt-5 pb-5" href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.macA64">
+									<div class="download-icon" style="color: #c0c0c0;">
+										<i class="fab fa-apple"></i>
+									</div>
+									<div class="download-osname mt-3">
+										<span>macOS</span>
+									</div>
+									<div class="download-osdesc mt-3">
+										<span>(macOS 10.12 or higher)</span>
+									</div>
+								</a>
+								-->
+								<!--
+								TODO arm support
+								<a class="download-item flex-fill bd-highlight text-center  pt-5 pb-5" href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.linuxA64">
+									<div class="download-icon">
+										<i class="fab fa-linux"></i>
+									</div>
+									<div class="download-osname mt-3">
+										<span>Linux</span>
+									</div>
+								</a>
+								-->
+							</div>
+						</div>
+						<div class="tab-pane fade" id="pills-nojre" role="tabpanel" aria-labelledby="pills-nojre-tab">
+							<div class="d-flex flex-row">
+								<a class="download-item flex-fill bd-highlight text-center pt-5 pb-5" href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.windows.no.jre.zip">
 									<div class="download-icon" style="color: #0078D7;">
 										<i class="fab fa-windows"></i>
 									</div>
@@ -88,23 +129,39 @@
 									<div class="download-osdesc mt-3">
 										<span>(Windows 7 or higher)</span>
 										<br>
-										<span>JRE 11 required</span>
+										<span>JRE 17 required</span>
 									</div>
 								</a>
-								<a class="download-item flex-fill bd-highlight text-center  pt-5 pb-5" href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo-mac-no-jre">
+								<a class="download-item flex-fill bd-highlight text-center pt-5 pb-5" href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.mac64.no.jre">
 									<div class="download-icon" style="color: #c0c0c0;">
 										<i class="fab fa-apple"></i>
 									</div>
 									<div class="download-osname mt-3">
-										<span>macOS</span>
+										<span>macOS x64</span>
 									</div>
 									<div class="download-osdesc mt-3">
 										<span>(macOS 10.12 or higher)</span>
 										<br>
-										<span>JRE 11 required</span>
+										<span>JRE 17 x64 required</span>
 									</div>
 								</a>
-								<a class="download-item flex-fill bd-highlight text-center  pt-5 pb-5" href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo-linux-no-jre">
+								<!--
+								TODO arm support
+								<a class="download-item flex-fill bd-highlight text-center  pt-5 pb-5" href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.mac64.no.jre">
+									<div class="download-icon" style="color: #c0c0c0;">
+										<i class="fab fa-apple"></i>
+									</div>
+									<div class="download-osname mt-3">
+										<span>macOS ARM</span>
+									</div>
+									<div class="download-osdesc mt-3">
+										<span>(macOS 10.12 or higher)</span>
+										<br>
+										<span>JRE 17 ARM required</span>
+									</div>
+								</a>
+								-->
+								<a class="download-item flex-fill bd-highlight text-center  pt-5 pb-5" href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.linux.no.jre">
 									<div class="download-icon">
 										<i class="fab fa-linux"></i>
 									</div>
@@ -112,7 +169,7 @@
 										<span>Linux</span>
 									</div>
 									<div class="download-osdesc mt-3">
-										<span>JRE 11 required</span>
+										<span>JRE 17 required</span>
 									</div>
 								</a>
 							</div>
