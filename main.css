@@ -5,7 +5,12 @@ html, body
 
 body
 {
-	background-color: lightGray;
+	background-color: var(--bs-secondary-bg);
+}
+
+.download-container
+{
+	background-color: var(--bs-body-bg);
 }
 
 .download-icon i
@@ -26,7 +31,6 @@ body
 {
 	cursor: pointer;
 	text-decoration: none;
-	color: black;
 	width: 50%
 }
 
@@ -34,21 +38,20 @@ body
 {
 	cursor: pointer;
 	text-decoration: none;
-	color: black;
 }
 
 .download-osdesc
 {
-	color: gray;
+	color: var(--bs-secondary-color);
 	font-size: 0.8rem;
 }
 
 .download-item:hover
 {
-	background-color: lightGray;
+	background-color: var(--bs-primary-bg-subtle);
 }
 
 .github-fork-ribbon.right-top:before
 {
-	background-color: #090;
+	background-color: var(--bs-success);
 }
