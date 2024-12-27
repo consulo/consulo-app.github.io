@@ -29,6 +29,9 @@
 		<script src="main.js?v=2"></script>
 
 		<style>
+			.nav-link {
+				width: 10em;
+			}
 			.download-table td {
 				padding-right: 10px;
 			}
@@ -46,17 +49,17 @@
 				<div class="container-fluid">
 					<div class="d-flex align-items-start">
 						<div class="nav flex-column nav-pills me-2 align-items-start" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-							<button class="nav-link active fab fa-windows" id="v-pills-windows-tab" data-bs-toggle="pill" data-bs-target="#v-pills-windows"
-									type="button" role="tab" aria-controls="v-pills-windows" aria-selected="true" style="width: 10em">
-								Windows
+							<button class="nav-link active" id="v-pills-windows-tab" data-bs-toggle="pill" data-bs-target="#v-pills-windows"
+									type="button" role="tab" aria-controls="v-pills-windows" aria-selected="true">
+								<i class="fab fa-windows"></i> Windows
 							</button>
-							<button class="nav-link fab fa-apple" id="v-pills-macos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-macos"
-									type="button" role="tab" aria-controls="v-pills-macos" aria-selected="false" style="width: 10em">
-								macOS
+							<button class="nav-link" id="v-pills-macos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-macos"
+									type="button" role="tab" aria-controls="v-pills-macos" aria-selected="false">
+								<i class="fab fa-apple"></i> macOS
 							</button>
-							<button class="nav-link fab fa-linux" id="v-pills-linux-tab" data-bs-toggle="pill" data-bs-target="#v-pills-linux"
-									type="button" role="tab" aria-controls="v-pills-linux" aria-selected="false" style="width: 10em">
-								Linux
+							<button class="nav-link" id="v-pills-linux-tab" data-bs-toggle="pill" data-bs-target="#v-pills-linux"
+									type="button" role="tab" aria-controls="v-pills-linux" aria-selected="false">
+								<i class="fab fa-linux"></i> Linux
 							</button>
 						</div>
 						<div class="tab-content w-100" id="v-pills-tabContent">
