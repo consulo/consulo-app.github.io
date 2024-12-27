@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="auto">
 	<head>
 		<meta charset="UTF-8">
-		<title>Consulo - Download</title>
+		<title>Consulo — Download</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="shortcut icon" type="image/png" href="/favicon.png?v=2"/>
@@ -19,14 +19,24 @@
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174153585-1"></script>
 		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-		  gtag('config', 'UA-174153585-1');
+			gtag('config', 'UA-174153585-1');
 		</script>
 
 		<script src="main.js?v=2"></script>
+
+		<style>
+			.download-table td {
+				padding-right: 10px;
+			}
+			.download-table td:nth-child(n + 2) {
+				padding: 0 5px;
+				text-align: center;
+			}
+		</style>
 	</head>
 	<body>
 		<a class="github-fork-ribbon right-top" href="https://github.com/consulo" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
@@ -36,17 +46,17 @@
 				<div class="container-fluid">
 					<div class="d-flex align-items-start">
 						<div class="nav flex-column nav-pills me-2 align-items-start" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-							<button class="nav-link active" id="v-pills-windows-tab" data-bs-toggle="pill" data-bs-target="#v-pills-windows"
+							<button class="nav-link active fab fa-windows" id="v-pills-windows-tab" data-bs-toggle="pill" data-bs-target="#v-pills-windows"
 									type="button" role="tab" aria-controls="v-pills-windows" aria-selected="true" style="width: 10em">
-								<i class="fab fa-windows"></i> Windows
+								Windows
 							</button>
-							<button class="nav-link" id="v-pills-macos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-macos"
+							<button class="nav-link fab fa-apple" id="v-pills-macos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-macos"
 									type="button" role="tab" aria-controls="v-pills-macos" aria-selected="false" style="width: 10em">
-								<i class="fab fa-apple"></i> macOS
+								macOS
 							</button>
-							<button class="nav-link" id="v-pills-linux-tab" data-bs-toggle="pill" data-bs-target="#v-pills-linux"
+							<button class="nav-link fab fa-linux" id="v-pills-linux-tab" data-bs-toggle="pill" data-bs-target="#v-pills-linux"
 									type="button" role="tab" aria-controls="v-pills-linux" aria-selected="false" style="width: 10em">
-								<i class="fab fa-linux"></i> Linux
+								Linux
 							</button>
 						</div>
 						<div class="tab-content w-100" id="v-pills-tabContent">
@@ -69,41 +79,23 @@
 										</h2>
 										<div id="accordionWindowsJRE" class="accordion-collapse collapse show" data-bs-parent="#accordionWindows">
 											<div class="accordion-body">
-												<ul>
-													<li>
-														<div>
-															<a class=""
-															   href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.windows64.installer">
-																Windows x64 Installer
-															</a>
-															<span class="badge rounded-pill text-bg-info">Installer</span>
-															<span class="badge rounded-pill text-bg-primary">JRE Included</span>
-															<span class="badge rounded-pill text-bg-success">x64</span>
-														</div>
-													</li>
-													<li>
-														<div>
-															<a class=""
-															   href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.windows64.zip">
-																Windows x64
-															</a>
-															<span class="badge rounded-pill text-bg-info">Archive</span>
-															<span class="badge rounded-pill text-bg-primary">JRE Included</span>
-															<span class="badge rounded-pill text-bg-success">x64</span>
-														</div>
-													</li>
-													<li>
-														<div>
-															<a class=""
-															   href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.windowsA64.zip">
-																Windows arm64
-															</a>
-															<span class="badge rounded-pill text-bg-info">Archive</span>
-															<span class="badge rounded-pill text-bg-primary">JRE Included</span>
-															<span class="badge rounded-pill text-bg-success">arm64</span>
-														</div>
-													</li>
-												</ul>
+												<table class="download-table">
+													<tr>
+														<td><a href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.windows64.installer">Windows x64 Installer</a></td>
+														<td><span class="badge rounded-pill text-bg-info">Installer</span></td>
+														<td><span class="badge rounded-pill text-bg-success">x64</span></td>
+													</tr>
+													<tr>
+														<td><a href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.windows64.zip">Windows x64</a></td>
+														<td><span class="badge rounded-pill text-bg-info">ZIP archive</span></td>
+														<td><span class="badge rounded-pill text-bg-success">x64</span></td>
+													</tr>
+													<tr>
+														<td><a href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.windowsA64.zip">Windows arm64</a></td>
+														<td><span class="badge rounded-pill text-bg-info">ZIP archive</span></td>
+														<td><span class="badge rounded-pill text-bg-success">arm64</span></td>
+													</tr>
+												</table>
 											</div>
 										</div>
 									</div>
@@ -116,19 +108,14 @@
 										</h2>
 										<div id="accordionWindowsWithoutJRE" class="accordion-collapse collapse" data-bs-parent="#accordionWindows">
 											<div class="accordion-body">
-												<ul>
-													<li>
-														<div>
-															<a class=""
-															   href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.windows.no.jre.zip">
-																Windows
-															</a>
-															<span class="badge rounded-pill text-bg-info">Archive</span>
-															<span class="badge rounded-pill text-bg-danger">No JRE</span>
-															<span class="badge rounded-pill text-bg-success">x64 &amp; arm64</span>
-														</div>
-													</li>
-												</ul>
+												<table class="download-table">
+													<tr>
+														<td><a href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.windows.no.jre.zip">Windows</a></td>
+														<td><span class="badge rounded-pill text-bg-info">ZIP archive</span></td>
+														<td><span class="badge rounded-pill text-bg-danger">No JRE</span></td>
+														<td><span class="badge rounded-pill text-bg-success">x64 &amp; arm64</span></td>
+													</tr>
+												</table>
 											</div>
 										</div>
 									</div>
@@ -160,31 +147,19 @@
 										</h2>
 										<div id="accordionMacOSJRE" class="accordion-collapse collapse show" data-bs-parent="#accordionMacOS">
 											<div class="accordion-body">
-												<ul>
-													<li>
-														<div>
-															<a class=""
-															   href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.macA64">
-																macOS arm64
-															</a>
-															<span class="badge rounded-pill text-bg-info">Archive</span>
-															<span class="badge rounded-pill text-bg-primary">JRE Included</span>
-															<span class="badge rounded-pill text-bg-success">arm64</span>
-															<span class="badge rounded-pill text-bg-secondary">Apple M1 or higher</span>
-														</div>
-													</li>
-													<li>
-														<div>
-															<a class=""
-															   href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.mac64">
-																macOS x64
-															</a>
-															<span class="badge rounded-pill text-bg-info">Archive</span>
-															<span class="badge rounded-pill text-bg-primary">JRE Included</span>
-															<span class="badge rounded-pill text-bg-success">x64</span>
-														</div>
-													</li>
-												</ul>
+												<table class="download-table">
+													<tr>
+														<td><a href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.macA64">macOS arm64</a></td>
+														<td><span class="badge rounded-pill text-bg-info">ZIP archive</span></td>
+														<td><span class="badge rounded-pill text-bg-success">arm64</span></td>
+														<td><span class="badge rounded-pill text-bg-secondary">Apple M1 or higher</span></td>
+													</tr>
+													<tr>
+														<td><a href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.mac64">macOS x64</a></td>
+														<td><span class="badge rounded-pill text-bg-info">ZIP archive</span></td>
+														<td><span class="badge rounded-pill text-bg-success">x64</span></td>
+													</tr>
+												</table>
 											</div>
 										</div>
 									</div>
@@ -197,30 +172,20 @@
 										</h2>
 										<div id="accordionMacOSWithoutJRE" class="accordion-collapse collapse" data-bs-parent="#accordionMacOS">
 											<div class="accordion-body">
-												<ul>
-													<li>
-														<div>
-															<a class=""
-															   href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.macA64.no.jre">
-																macOS arm64
-															</a>
-															<span class="badge rounded-pill text-bg-info">Archive</span>
-															<span class="badge rounded-pill text-bg-danger">No JRE</span>
-															<span class="badge rounded-pill text-bg-success">arm64</span>
-														</div>
-													</li>
-													<li>
-														<div>
-															<a class=""
-															   href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.mac64.no.jre">
-																macOS x64
-															</a>
-															<span class="badge rounded-pill text-bg-info">Archive</span>
-															<span class="badge rounded-pill text-bg-danger">No JRE</span>
-															<span class="badge rounded-pill text-bg-success">x64</span>
-														</div>
-													</li>
-												</ul>
+												<table class="download-table">
+													<tr>
+														<td><a href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.macA64.no.jre">macOS arm64</a></td>
+														<td><span class="badge rounded-pill text-bg-info">ZIP archive</span></td>
+														<td><span class="badge rounded-pill text-bg-danger">No JRE</span></td>
+														<td><span class="badge rounded-pill text-bg-success">arm64</span></td>
+													</tr>
+													<tr>
+														<td><a href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.mac64.no.jre">macOS x64</a></td>
+														<td><span class="badge rounded-pill text-bg-info">ZIP archive</span></td>
+														<td><span class="badge rounded-pill text-bg-danger">No JRE</span></td>
+														<td><span class="badge rounded-pill text-bg-success">x64</span></td>
+													</tr>
+												</table>
 											</div>
 										</div>
 									</div>
@@ -245,30 +210,18 @@
 										</h2>
 										<div id="accordionLinuxJRE" class="accordion-collapse collapse show" data-bs-parent="#accordionLinux">
 											<div class="accordion-body">
-												<ul>
-													<li>
-														<div>
-															<a class=""
-															   href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.linux64">
-																Linux x64
-															</a>
-															<span class="badge rounded-pill text-bg-info">Archive</span>
-															<span class="badge rounded-pill text-bg-primary">JRE Included</span>
-															<span class="badge rounded-pill text-bg-success">x64</span>
-														</div>
-													</li>
-													<li>
-														<div>
-															<a class=""
-															   href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.linuxA64">
-																Linux arm64
-															</a>
-															<span class="badge rounded-pill text-bg-info">Archive</span>
-															<span class="badge rounded-pill text-bg-primary">JRE Included</span>
-															<span class="badge rounded-pill text-bg-success">arm64</span>
-														</div>
-													</li>
-												</ul>
+												<table class="download-table">
+													<tr>
+														<td><a href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.linux64">Linux x64</a></td>
+														<td><span class="badge rounded-pill text-bg-info">ZIP archive</span></td>
+														<td><span class="badge rounded-pill text-bg-success">x64</span></td>
+													</tr>
+													<tr>
+														<td><a href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.linuxA64">Linux arm64</a></td>
+														<td><span class="badge rounded-pill text-bg-info">ZIP archive</span></td>
+														<td><span class="badge rounded-pill text-bg-success">arm64</span></td>
+													</tr>
+												</table>
 											</div>
 										</div>
 									</div>
@@ -281,28 +234,21 @@
 										</h2>
 										<div id="accordionLinuxWithoutJRE" class="accordion-collapse collapse" data-bs-parent="#accordionLinux">
 											<div class="accordion-body">
-												<ul>
-													<li>
-														<div>
-															<a class=""
-															   href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.linux.no.jre">
-																Linux
-															</a>
-															<span class="badge rounded-pill text-bg-info">Archive</span>
-															<span class="badge rounded-pill text-bg-danger">No JRE</span>
-															<span class="badge rounded-pill text-bg-success">x64 &amp; arm64</span>
-														</div>
-													</li>
-												</ul>
+												<table class="download-table">
+													<tr>
+														<td><a href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.linux.no.jre">Linux</a></td>
+														<td><span class="badge rounded-pill text-bg-info">ZIP archive</span></td>
+														<td><span class="badge rounded-pill text-bg-danger">No JRE</span></td>
+														<td><span class="badge rounded-pill text-bg-success">x64 &amp; arm64</span></td>
+													</tr>
+												</table>
 											</div>
 										</div>
 									</div>
 								</div>
-
 							</div>
 						</div>
 					</div>
-					
 				</div>
 			</div>
 		</div>
