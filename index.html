@@ -32,7 +32,7 @@
 
 		<style>
 			.nav-link {
-				width: 10em;
+				width: 12em;
 			}
 			.download-table td {
 				padding-right: 10px;
@@ -89,14 +89,9 @@
 							</button>
 						</div>
 						<div class="tab-content w-100" id="v-pills-tabContent">
-							<div class="tab-pane fade show active " id="v-pills-windows" role="tabpanel" aria-labelledby="windows"
-								 tabindex="0">
-								<div class="alert alert-warning w-100" role="alert">
-									<b>Required:</b>
-									<ui>
-										<li>Windows 10 or higher</li>
-										<li>JVM 21 or higher</li>
-									</ui>
+							<div class="tab-pane fade show active " id="v-pills-windows" role="tabpanel" aria-labelledby="windows" tabindex="0">
+								<div class="alert alert-info w-100" role="info">
+									<span>For Windows 10 or higher</span>
 								</div>
 								<div class="accordion" id="accordionWindows">
 									<div class="accordion-item">
@@ -137,6 +132,12 @@
 										</h2>
 										<div id="accordionWindowsWithoutJRE" class="accordion-collapse collapse" data-bs-parent="#accordionWindows">
 											<div class="accordion-body">
+												<div class="alert alert-warning w-100" role="alert">
+													<b>Required:</b>
+													<ul>
+														<li>JVM 21 or higher</li>
+													</ul>
+												</div>
 												<table class="download-table">
 													<tr>
 														<td><a href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.windows.no.jre.zip">Windows</a></td>
@@ -150,14 +151,9 @@
 									</div>
 								</div>
 							</div>
-							<div class="tab-pane fade" id="v-pills-macos" role="tabpanel" aria-labelledby="macos"
-								 tabindex="0">
-								<div class="alert alert-warning w-100" role="alert">
-									<b>Required:</b>
-									<ui>
-										<li>macOS 10.12 or higher</li>
-										<li>JVM 21 or higher</li>
-									</ui>
+							<div class="tab-pane fade" id="v-pills-macos" role="tabpanel" aria-labelledby="macos" tabindex="0">
+								<div class="alert alert-info w-100">
+									<span>For macOS 10.12 or higher</span>
 								</div>
 								<div class="alert alert-danger w-100" role="alert">
 									<p><b>Warning</b>: you need to clear quarantine flag before running app. This flag prevents running non-App Store applications on latest MacOS versions.</p>
@@ -201,6 +197,12 @@
 										</h2>
 										<div id="accordionMacOSWithoutJRE" class="accordion-collapse collapse" data-bs-parent="#accordionMacOS">
 											<div class="accordion-body">
+												<div class="alert alert-warning w-100 mx-auto">
+													<b>Required:</b>
+													<ul>
+														<li>JVM 21 or higher</li>
+													</ul>
+												</div>
 												<table class="download-table">
 													<tr>
 														<td><a href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.macA64.no.jre">macOS arm64</a></td>
@@ -220,15 +222,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="tab-pane fade" id="v-pills-linux" role="tabpanel" aria-labelledby="linux"
-								 tabindex="0">
-								<div class="alert alert-warning w-100" role="alert">
-									<b>Required:</b>
-									<ui>
-										<li>JVM 21 or higher</li>
-									</ui>
-								</div>
-
+							<div class="tab-pane fade" id="v-pills-linux" role="tabpanel" aria-labelledby="linux" tabindex="0">
 								<div class="accordion" id="accordionLinux">
 									<div class="accordion-item">
 										<h2 class="accordion-header">
@@ -273,6 +267,12 @@
 										</h2>
 										<div id="accordionLinuxWithoutJRE" class="accordion-collapse collapse" data-bs-parent="#accordionLinux">
 											<div class="accordion-body">
+												<div class="alert alert-warning w-100" role="alert">
+													<b>Required:</b>
+													<ul>
+														<li>JVM 21 or higher</li>
+													</ul>
+												</div>
 												<table class="download-table">
 													<tr>
 														<td><a href="https://hub.consulo.io/api/repository/download?channel=release&platformVersion=SNAPSHOT&id=consulo.dist.linux.no.jre">Linux</a></td>
