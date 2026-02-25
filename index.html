@@ -124,6 +124,23 @@
 			#theme-toggle:hover {
 				background: var(--bs-tertiary-bg);
 			}
+
+			.plugins-link {
+				display: inline-block;
+				padding: 6px 16px;
+				border: 1px solid var(--bs-border-color);
+				border-radius: 6px;
+				background: var(--bs-body-bg);
+				color: var(--bs-body-color);
+				text-decoration: none;
+				font-size: 0.9rem;
+				transition: background 0.2s, border-color 0.2s;
+			}
+			.plugins-link:hover {
+				background: var(--bs-tertiary-bg);
+				border-color: var(--bs-secondary-color);
+				color: var(--bs-body-color);
+			}
 		</style>
 
 		<script type="application/ld+json">
@@ -159,7 +176,7 @@
 			</svg>
 		</a>
 
-		<div class="container-fluid min-vh-100 d-flex align-items-center justify-content-center py-3">
+		<div class="container-fluid min-vh-100 d-flex flex-column align-items-center justify-content-center py-3">
 			<div class="d-flex bd-highlight border border-secondary rounded border-opacity-50 download-container py-3">
 				<div class="container-fluid d-flex align-items-center">
 					<div class="d-flex align-items-center download-layout w-100">
@@ -378,6 +395,11 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="text-center mt-3">
+				<a href="https://plugins.consulo.app/" target="_blank" class="plugins-link">
+					Plugins Repository <i class="fas fa-external-link-alt ms-1"></i>
+				</a>
 			</div>
 		</div>
 
